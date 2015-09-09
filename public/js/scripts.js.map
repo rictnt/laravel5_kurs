@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js","students.js"],"names":[],"mappings":"AAAA;ACAA","file":"scripts.js","sourcesContent":["document.write(\"Tekst pochodzi z pliku app.js.\");","document.write(\"Tekst pochodzi z pliku students.js.\");"],"sourceRoot":"/source/"}

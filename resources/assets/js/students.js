@@ -1,0 +1,1 @@
+document.write("Tekst pochodzi z pliku students.js.");
