@@ -55,7 +55,7 @@ MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 ~~~
 
-- **Plik konfiguracyjny ftp**
+- **Plik konfiguracyjny ftp** 
 
 W tym projekcie, wykorzystywana jest biblioteka anchu/ftp. Należy uruchomić polecenie tworzące plik
 konfiguracyjny ftp z użyciem polecenia `php artisan vendor:publish --provider="Anchu\Ftp"`. Plik ten zawiera
