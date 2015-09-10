@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3878b84392c0810a056a5d3ebe79504d",
+    "hash": "a73e3b2cd3510b1ec64483ab17ee8759",
     "packages": [
+        {
+            "name": "alexpechkarev/google-geocoder",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexpechkarev/google-geocoder.git",
+                "reference": "d5a1e49f6c681f043c965f2d542d7a4eec5c53ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexpechkarev/google-geocoder/zipball/d5a1e49f6c681f043c965f2d542d7a4eec5c53ae",
+                "reference": "d5a1e49f6c681f043c965f2d542d7a4eec5c53ae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Alexpechkarev\\GoogleGeocoder": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Pechkarev",
+                    "email": "alexpechkarev@gmail.com"
+                }
+            ],
+            "description": "Simple Google Geocoding API v3 wrapper for Laravel 4",
+            "homepage": "https://github.com/alexpechkarev/google-geocoder",
+            "keywords": [
+                "geocoding",
+                "google geocoding api",
+                "laravel"
+            ],
+            "time": "2015-06-09 13:54:16"
+        },
         {
             "name": "almasaeed2010/adminlte",
             "version": "v2.3.0",

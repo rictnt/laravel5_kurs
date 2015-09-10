@@ -18,6 +18,7 @@ Route::group(['as' => 'public::'], function () {
     Route::get('/', 'StartController@index');
     Route::controller('profil', 'Auth\AuthController');
     Route::get('pdf', 'Pdf\PdfController@index');
+    Route::get('geocoder', 'Other\GeocoderController@index');
   
 });
 

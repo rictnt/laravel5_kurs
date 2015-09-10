@@ -58,8 +58,14 @@ MAIL_ENCRYPTION=null
 - **Plik konfiguracyjny ftp**
 
 W tym projekcie, wykorzystywana jest biblioteka anchu/ftp. Należy uruchomić polecenie tworzące plik
-konfiguracyjny ftp z użyciem polecenia `php artisan vendor:publish --provider="Anchu\Ftp\FtpServiceProvider"`. Plik ten zawiera
+konfiguracyjny ftp z użyciem polecenia `php artisan vendor:publish --provider="Anchu\Ftp"`. Plik ten zawiera
 tajne dane i został wykluczony z repozytorium w pliku `.gitignore`.
+
+- **Plik konfiguracyjny google-geocoder.php**
+
+W tym projekcie, wykorzystywana jest biblioteka alexpechkarev/google-geocoder. Plik ten należy utworzyć ręcznie,
+zgodnie z dokumentacją biblioteki. Plik ten zawiera
+kod dostępu API i został wykluczony z repozytorium w pliku `.gitignore`.
 
 - **Instalujemy klucz szyfrujący** 
 
