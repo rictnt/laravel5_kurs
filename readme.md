@@ -32,6 +32,11 @@ Wykonujemy instalację składników zapisanych w composer.json
 composer install
 ~~~
 
+- **Nadajemy prawa dla folderu storage (systemy linux)**
+~~~
+sudo chmod -R o+w storage/
+~~~
+
 - **Plik konfiguracyjny .env**
 ~~~
 APP_ENV=local

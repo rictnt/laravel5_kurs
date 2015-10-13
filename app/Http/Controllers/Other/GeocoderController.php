@@ -20,7 +20,6 @@ class GeocoderController extends Controller
                 "address"=>"Warszawa, Mickiewicza",
                 "components"=>"country:PL"
             );
-        //$param = array("latlng"=>"40.714224,-73.961452");
         $response = \Geocoder::geocode('json', $param);
         dd($response);
     }

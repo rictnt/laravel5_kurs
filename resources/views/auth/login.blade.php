@@ -8,6 +8,13 @@
 
 @section('content')
         Login customer
+        @if (count($errors) > 0)
+	<ul>
+	@foreach ($errors->all() as $error)
+		<li>{{ $error }}</li>
+	@endforeach
+	</ul>
+@endif
         <form method="POST" action="/profil/login">
         {!! csrf_field() !!}
         <div>
@@ -25,4 +32,5 @@
         <button type="submit">Login</button>
         </div>
         </form>
+        <a href="{{ url('profil/password/email') }}">Przypominanie hasła</a>
 @endsection

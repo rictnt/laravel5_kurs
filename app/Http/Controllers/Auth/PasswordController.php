@@ -20,6 +20,9 @@ class PasswordController extends Controller
 
     use ResetsPasswords;
 
+    protected $subject = "Link do resetowania hasła";
+    protected $redirectTo = '/profil/login';
+    
     /**
      * Create a new password controller instance.
      *

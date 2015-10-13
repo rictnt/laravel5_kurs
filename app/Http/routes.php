@@ -11,15 +11,20 @@
 |
 */
 
+
+
+
 Route::filter('odczytDanychStudentow', function() { if (!Entrust::can('odczytDanychStudentow')) { return 'Brak uprawnień'; } });
 Route::when('students*', 'odczytDanychStudentow');
 
+
 Route::group(['as' => 'public::'], function () { 
     Route::get('/', 'StartController@index');
+    Route::controller('profil/password', 'Auth\PasswordController');
     Route::controller('profil', 'Auth\AuthController');
+    
     Route::get('pdf', 'Pdf\PdfController@index');
     Route::get('geocoder', 'Other\GeocoderController@index');
-  
 });
 
 Route::group(['middleware' => 'auth'], function () {
