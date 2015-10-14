@@ -11,7 +11,13 @@
 |
 */
 
-
+// Set and get language for website
+$cookie_lang = Cookie::get('lang');
+($cookie_lang) ? App::setLocale(Crypt::decrypt($cookie_lang)) : false;
+Route::get('lang/{lang}', function($lang){
+    Cookie::queue(Cookie::forever('lang', $lang));
+    return back();
+});
 
 
 Route::filter('odczytDanychStudentow', function() { if (!Entrust::can('odczytDanychStudentow')) { return 'Brak uprawnień'; } });
